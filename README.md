@@ -1,89 +1,144 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 App de Organização de Finanças Pessoais MicroGastos
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+#Prompt
 
-## ✨ O que é Vibe Coding
+PRD – Aplicativo de Controle de Microgastos
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+Nome: MicroGastos 
+Objetivo: Ajudar pessoas desatentas a identificar e reduzir pequenos gastos diários que se acumulam em grandes despesas, de forma simples e automatizada, sem necessidade de planilhas ou registros manuais complexos.
+Público-alvo: Usuários iniciantes ou desatentos, que não têm hábito de registrar despesas, mas querem controlar para evitar surpresas financeiras.
 
-## 🎯 Desafio
+2. Problema
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+Pequenos gastos cotidianos (cafés, aplicativos, assinaturas, transportes) passam despercebidos, mas somam valores significativos.
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+Apps financeiros tradicionais exigem registros manuais e categorização complexa, desmotivando o usuário.
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+Necessidade de identificar padrões de microgastos e alertar o usuário de forma automatizada.
 
-## 🪄 Etapas do Desafio
+3. Objetivos do Produto
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+Permitir que o usuário registre gastos rapidamente via chat.
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+Detectar gastos pequenos e recorrentes automaticamente.
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+Alertar sobre despesas esquecidas ou repetitivas.
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+Fornecer relatórios simples que mostrem onde o dinheiro “escapa”.
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+Incentivar mudanças de comportamento com dicas práticas de economia.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+4. Funcionalidades Principais
+Funcionalidade	Descrição	Prioridade
+Registro de gastos via chat	Usuário informa compras em linguagem natural.	Alta
+Categorização automática	Sistema classifica gastos em categorias (alimentação, transporte, entretenimento etc.).	Alta
+Detecção de microgastos	Identifica padrões de consumo pequeno que se acumulam.	Alta
+Alertas de despesas recorrentes	Notificações sobre assinaturas ou gastos esquecidos.	Média
+Dicas automáticas de economia	Sugestões de redução de gastos e alternativas mais baratas.	Média
+Relatórios visuais	Gráficos simples de microgastos e impacto no orçamento.	Alta
+5. Fluxos de Usuário
+Fluxo Principal
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+Usuário abre o app → recebe mensagem de boas-vindas.
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
-```
+Chat inicia → usuário registra gasto: “Comprei café por R$5”.
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+Sistema categoriza automaticamente e confirma.
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+App sugere alertas e mostra impacto mensal do gasto.
 
-### 2. Explorando o Lovable na Prática
+Relatórios exibem onde pequenos gastos somam grandes despesas.
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+Fluxo de Alertas
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+Sistema detecta gasto recorrente não registrado.
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+Notifica o usuário: “Você tem uma assinatura de R$20 que não lembra de usar”.
 
-### 3. Entregando o Desafio na DIO
+Usuário pode confirmar, cancelar ou adiar decisão.
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+Histórico é atualizado e relatório ajustado.
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+6. Telas do MVP
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+Boas-vindas e Perfil: Coleta nome, avatar e confirma interesse em rastrear microgastos.
 
-## 💬 Conclusão
+Chat de Registro de Gastos: Entrada de texto em linguagem natural, categorização automática e confirmação de registro.
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+Resumo de Microgastos: Lista de gastos pequenos, gráficos simples, alertas de despesas recorrentes.
+
+Alertas e Dicas do Agente Financeiro: Notificações de microgastos e sugestões de economia.
+
+Relatórios Mensais: Evolução dos gastos, comparativo entre pequenos e grandes gastos, economia potencial.
+
+7. Requisitos Técnicos
+
+PLN (Processamento de Linguagem Natural): interpretar mensagens em linguagem natural.
+
+Classificação automática de transações: baseada em histórico e padrões do usuário.
+
+Sistema de alertas: notificações de gastos recorrentes ou esquecidos.
+
+Armazenamento e análise de dados: histórico de gastos, categorias e assinaturas.
+
+Visualização de gráficos: dashboards simples e intuitivos.
+
+8. Métricas de Sucesso
+
+Percentual de usuários registrando pelo menos 5 microgastos na primeira semana.
+
+Quantidade de alertas que geram ação (cancelamento ou ajuste de gastos).
+
+Redução percebida em gastos desnecessários após 1 mês de uso.
+
+Engajamento com relatórios mensais (visualizações e interações).
+
+9. Roadmap de MVP
+Fase	Objetivo	Tempo Estimado
+Fase 1	Chat de registro + categorização automática	4 semanas
+Fase 2	Relatórios de microgastos + gráficos	3 semanas
+Fase 3	Alertas de gastos recorrentes	2 semanas
+Fase 4	Dicas automáticas de economia	2 semanas
+Fase 5	Testes com usuários desatentos e ajustes finais	3 semanas
+
+Resultado Final no Lovable: [https://lovable.dev/projects/696272ba-772e-4341-adfd-5118aca7334a](https://microgastos.lovable.app) 
+
+
+<img width="1365" height="725" alt="image" src="https://github.com/user-attachments/assets/3f7f699b-96f3-4164-a076-4b03f19607bc" /> 
+
+
+Registro de gastos via chat  
+O usuário informa despesas em linguagem natural, como “Gastei R$5 no café”.
+
+Categorização automática  
+O sistema identifica e classifica o tipo de gasto (ex: alimentação, transporte).
+
+Detecção de microgastos  
+Reconhece padrões de pequenos gastos que se acumulam ao longo do tempo.
+
+Alertas de despesas recorrentes  
+Notifica sobre assinaturas ou gastos repetitivos que podem passar despercebidos.
+
+Dicas automáticas de economia  
+Sugestões práticas para reduzir gastos e encontrar alternativas mais baratas.
+
+Relatórios visuais  
+Gráficos simples que mostram o impacto dos microgastos no orçamento mensal.
+
+# O que funcionou bem ?
+
+A execução dos comandos, e as funcionalidades geradas pelo lovable
+
+# O que nao funcionou como esperado ?
+
+a limitação de intenração com o lovable, devido as limitações. 
+
+# O que aprendeu sobre conversar com IA ?
+
+sabendo direcionar , e detalhar as informações, o resultado é sempre melhor;
+
+
+
+
+
